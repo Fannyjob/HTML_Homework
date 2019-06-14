@@ -4,12 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <title>My Calculator</title>
+    <link rel=stylesheet type="text/css" href="css/style.css">
+    <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
 </head>
 
 <body>
+    <div id="box">
+        <!-- <div class="result"></div> -->
+        <p id="result"></p>
+        <div class="btnbox-left">
+            <button style="background-color: #eee; color: #000;">AC</button>
+            <button style="background-color: #eee;color: #000;">符號</button>
+            <button style="background-color: #eee;color: #000;">%</button>
+            
+            <button onclick="fun('1')">1</button>
+            <button onclick="fun('2')">2</button>
+            <button onclick="fun('3')">3</button>
 
-   <p><a href="https://www.desmos.com/scientific" target="_blank">參考網路上面的計算機</a></p>
-    
+            <button onclick="fun('4')">4</button>
+            <button onclick="fun('5')">5</button>
+            <button onclick="fun('6')">6</button>
+
+            <button onclick="fun('7')">7</button>
+            <button onclick="fun('8')">8</button>
+            <button onclick="fun('9')">9</button>
+
+            <button onclick="fun('0')" style="width: 180px;">0</button>
+            <button onclick="fun('.')">.</button>
+
+
+        </div>
+        <div class="btnbox-right">
+            <button style="background-color: orange;">/</button>
+            <button style="background-color: orange;">X</button>
+            <button style="background-color: orange;">-</button>
+            <button style="background-color: orange;">+</button>
+            <button style="background-color: orange;">=</button>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        function fun(str) {
+            document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + str;
+        }
+    </script>
+
+
+    <!-- <p><a href="https://www.desmos.com/scientific" target="_blank">參考網路上面的計算機</a></p> -->
+
 </body>
 
 </html>

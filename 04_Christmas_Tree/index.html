@@ -12,19 +12,26 @@
 </head>
 
 <body>
-    <div id="pSquare"></div>
+    <p id="pSquare"></p>
     <script>
 
         stars = "";
-        var c = "&nbsp";
+        var rows = 5;
 
-        for (var j = 1; j <= 6; j++) {
-            for (var i = 1; i <= j; i++) {
-                stars = stars + "*";
+        //列
+        for (var j = 1; j <= rows; j++) {
+            //欄位
+            for (var i = 1; i <= (row*2-1); i++) {
+                //判斷 要畫 星星 還是 空白
+                if(i <= (rows - j) || i >=(rows + j)){
+                    stars = stars + "&emsp;";
+                }else{
+                    stars = stars+"*";
+                }
+                
+
             }
             stars = stars + "<br>";
-            stars = stars + c + "<br>";
-            stars = stars + c + c + "<br>";
         }
 
         document.getElementById("pSquare").innerHTML = stars;

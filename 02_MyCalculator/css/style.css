@@ -1,0 +1,48 @@
+#box{
+    width: 400px;
+    height: 650px;
+    float: left;
+    background-color: #000;
+
+}
+.result{
+    width: 398px;
+    height: 148px;
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+    border: 1px #aaa solid;
+}
+.btnbox-left{
+    width: 300px;
+    float: left;
+
+}
+.btnbox-right{
+    width: 100px;
+    float: left;
+
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    margin:  10px;
+    background-color: #444444 ;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+    float: left;
+    
+}
+p{
+    width: 398px;
+    height: 98px;
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+    border: 1px #aaa solid;
+}
