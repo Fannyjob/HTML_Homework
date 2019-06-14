@@ -6,13 +6,29 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <title>輸入聖誕樹的高度，然後用*組合出來</title>
 </head>
 
 <body>
-
+    <div id="pSquare"></div>
     <script>
+
+        stars = "";
+        var c = "&nbsp";
+
+        for (var j = 1; j <= 6; j++) {
+            for (var i = 1; i <= j; i++) {
+                stars = stars + "*";
+            }
+            stars = stars + "<br>";
+            stars = stars + c + "<br>";
+            stars = stars + c + c + "<br>";
+        }
+
+        document.getElementById("pSquare").innerHTML = stars;
+
         // 分解動作
         // 1. 觀察列和星星數量的變化: 星星數量 = 最終列 + 最終列 - 1
         //    1＝>1、2=>3、3=>5、4=>7、5=>9
@@ -22,6 +38,11 @@
         //    第三列：1=>1、7=>7
         //    第四列：
         // 3. 觀察星星中間位置: 中間位置 = 最終列
+
+
+
+
+        //有一個迴圈的數量式列2-1
     </script>
 </body>
 
